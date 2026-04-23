@@ -1,0 +1,589 @@
+{
+  "users": [
+    {
+      "id": "user-admin-001",
+      "userId": "ADM-001",
+      "email": "244m1a3118@vemu.org",
+      "password": "vemuit@2008",
+      "user_name": "J Jay Balaji",
+      "firstName": "J Jay",
+      "lastName": "Balaji",
+      "phone": "9347857837",
+      "role": "Administrator",
+      "dept": "Library & Admin",
+      "status": "Active",
+      "joined": "2026-04-08",
+      "profile": {
+        "linkedin": "",
+        "portfolio": "",
+        "goalText": "",
+        "motivationalWords": ""
+      },
+      "profileStatus": "Normal"
+    },
+    {
+      "id": "user-c7edf2a05f0b",
+      "userId": "STD-3162",
+      "email": "244m1a3162@vemu.org",
+      "password": "vemuit@2008",
+      "user_name": "vajrala sameera",
+      "firstName": "vajrala",
+      "lastName": "sameera",
+      "phone": "9652014707",
+      "role": "Student",
+      "dept": "Computer Science & Engineering",
+      "status": "Active",
+      "joined": "2026-04-07",
+      "profile": {
+        "linkedin": "",
+        "portfolio": "",
+        "goalText": "",
+        "motivationalWords": ""
+      },
+      "profileStatus": "Normal"
+    },
+    {
+      "id": "user-33ac3728a186",
+      "userId": "FAC-001",
+      "email": "244M1A3111@vemu.org",
+      "password": "vemuit@2008",
+      "user_name": "Ellanki gunavathi",
+      "firstName": "Ellanki",
+      "lastName": "gunavathi",
+      "phone": "9390631364",
+      "role": "Faculty",
+      "dept": "Computer Science & Engineering",
+      "status": "Active",
+      "joined": "2026-04-07",
+      "profile": {
+        "linkedin": "",
+        "portfolio": "",
+        "goalText": "",
+        "motivationalWords": ""
+      },
+      "profileStatus": "Normal"
+    },
+    {
+      "id": "user-5ac111a43611",
+      "userId": "STD-3145",
+      "email": "244m1a3145@vemu.org",
+      "password": "vemuit@2008",
+      "user_name": "R Nanda Kumar",
+      "firstName": "R",
+      "lastName": "Nanda Kumar",
+      "phone": "7898619599",
+      "role": "Student",
+      "dept": "Computer Science & Engineering",
+      "status": "Active",
+      "joined": "2026-04-07",
+      "profile": {
+        "linkedin": "",
+        "portfolio": "",
+        "goalText": "",
+        "motivationalWords": ""
+      },
+      "profileStatus": "Normal"
+    },
+    {
+      "id": "user-d69f58395c49",
+      "userId": "LIB-001",
+      "email": "254m5a3106@vemu.org",
+      "password": "vemuit@2008",
+      "user_name": "penumuru jahnavi",
+      "firstName": "penumuru",
+      "lastName": "jahnavi",
+      "phone": "9392166656",
+      "role": "Librarian",
+      "dept": "Computer Science & Engineering",
+      "status": "Active",
+      "joined": "2026-04-07",
+      "profile": {
+        "linkedin": "",
+        "portfolio": "",
+        "goalText": "",
+        "motivationalWords": ""
+      },
+      "profileStatus": "Normal"
+    },
+    {
+      "id": "user-bab4afc1db3b",
+      "userId": "LIB-002",
+      "email": "244m1a3155@vemu.org",
+      "password": "vemuit@2008",
+      "user_name": "Shaik Reehan",
+      "firstName": "Shaik",
+      "lastName": "Reehan",
+      "phone": "7207702634",
+      "role": "Librarian",
+      "dept": "Computer Science & Engineering",
+      "status": "Active",
+      "joined": "2026-04-07",
+      "profile": {
+        "linkedin": "",
+        "portfolio": "",
+        "goalText": "",
+        "motivationalWords": ""
+      },
+      "profileStatus": "Normal"
+    },
+    {
+      "id": "user-db442b773a70",
+      "userId": "STD-3160",
+      "email": "244m1a3160@vemu.org",
+      "password": "vemuit@2008",
+      "user_name": "Babu Prakash",
+      "firstName": "Babu",
+      "lastName": "Prakash",
+      "phone": "7075902075",
+      "role": "Student",
+      "dept": "Computer Science & Engineering",
+      "status": "Active",
+      "joined": "2026-04-07",
+      "profile": {
+        "linkedin": "",
+        "portfolio": "",
+        "goalText": "",
+        "motivationalWords": ""
+      },
+      "profileStatus": "Normal"
+    },
+    {
+      "id": "user-05c4a72035b1",
+      "userId": "ADM-003",
+      "email": "244m1a3132@vemu.org",
+      "password": "vemuit@2008",
+      "user_name": "N Devisree",
+      "firstName": "N",
+      "lastName": "Devisree",
+      "phone": "9346512899",
+      "role": "Administrator",
+      "dept": "Computer Science & Engineering",
+      "status": "Active",
+      "joined": "2026-04-07",
+      "profile": {
+        "linkedin": "",
+        "portfolio": "",
+        "goalText": "",
+        "motivationalWords": ""
+      },
+      "profileStatus": "Normal"
+    },
+    {
+      "id": "user-1776865672320",
+      "userId": "ADM-004",
+      "email": "jaybalajij2552@vemu.org",
+      "password": "vemuit@2008",
+      "user_name": "Jay Balaji",
+      "firstName": "Jay",
+      "lastName": "Balaji",
+      "phone": "",
+      "role": "Administrator",
+      "dept": "Library & Admin",
+      "status": "Active",
+      "joined": "2026-04-22T13:47:52.320Z"
+    }
+  ],
+  "books": [
+    {
+      "id": "book-1713000000001",
+      "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "author": "Robert C. Martin",
+      "isbn": "978-0132350884",
+      "category": "Computer Science",
+      "year": "2008",
+      "totalCopies": 5,
+      "availCopies": 5,
+      "location": "CS-A1",
+      "status": "Available",
+      "archived": false
+    },
+    {
+      "id": "book-1713000000002",
+      "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+      "author": "Erich Gamma, Richard Helm",
+      "isbn": "978-0201633610",
+      "category": "Computer Science",
+      "year": "1994",
+      "totalCopies": 3,
+      "availCopies": 3,
+      "location": "CS-A1",
+      "status": "Available",
+      "archived": false
+    },
+    {
+      "id": "book-1713000000011",
+      "title": "Microelectronic Circuits",
+      "author": "Adel S. Sedra",
+      "isbn": "978-0199339136",
+      "category": "Electronics",
+      "year": "2014",
+      "totalCopies": 7,
+      "availCopies": 6,
+      "location": "EC-B1",
+      "status": "Available",
+      "archived": false
+    },
+    {
+      "id": "book-1713000000012",
+      "title": "Digital Design",
+      "author": "M. Morris R. Mano",
+      "isbn": "978-0132774208",
+      "category": "Electronics",
+      "year": "2012",
+      "totalCopies": 5,
+      "availCopies": 5,
+      "location": "EC-B2",
+      "status": "Available",
+      "archived": false
+    },
+    {
+      "id": "book-1713000000021",
+      "title": "Advanced Engineering Mathematics",
+      "author": "Erwin Kreyszig",
+      "isbn": "978-0470458365",
+      "category": "Mathematics",
+      "year": "2011",
+      "totalCopies": 15,
+      "availCopies": 12,
+      "location": "MA-C1",
+      "status": "Available",
+      "archived": false
+    },
+    {
+      "id": "book-1713000000022",
+      "title": "Calculus: Early Transcendentals",
+      "author": "James Stewart",
+      "isbn": "978-1285741550",
+      "category": "Mathematics",
+      "year": "2015",
+      "totalCopies": 20,
+      "availCopies": 18,
+      "location": "MA-C2",
+      "status": "Available",
+      "archived": false
+    },
+    {
+      "id": "book-1713000000031",
+      "title": "Principles of Management",
+      "author": "P. C. Tripathi",
+      "isbn": "978-1259005121",
+      "category": "Management",
+      "year": "2012",
+      "totalCopies": 8,
+      "availCopies": 8,
+      "location": "MN-D1",
+      "status": "Available",
+      "archived": false
+    },
+    {
+      "id": "book-1713000000041",
+      "title": "Concepts of Physics",
+      "author": "H. C. Verma",
+      "isbn": "978-8177091878",
+      "category": "Physics",
+      "year": "1992",
+      "totalCopies": 25,
+      "availCopies": 20,
+      "location": "PH-E1",
+      "status": "Available",
+      "archived": false
+    },
+    {
+      "id": "book-1713000000051",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "isbn": "978-0062315007",
+      "category": "General Fiction",
+      "year": "1988",
+      "totalCopies": 10,
+      "availCopies": 10,
+      "location": "GF-F1",
+      "status": "Available",
+      "archived": false
+    },
+    {
+      "id": "book-1713000000061",
+      "title": "Theory of Machines",
+      "author": "R. S. Khurmi",
+      "isbn": "978-8121925242",
+      "category": "Mechanical",
+      "year": "2005",
+      "totalCopies": 10,
+      "availCopies": 10,
+      "location": "ME-G1",
+      "status": "Available",
+      "archived": false
+    }
+  ],
+  "transactions": [],
+  "auditLog": [],
+  "sessions": [
+    {
+      "token": "tok_1776862791742_ca1c7",
+      "userId": "user-05c4a72035b1",
+      "createdAt": "2026-04-22T12:59:51.742Z"
+    },
+    {
+      "token": "tok_1776864027569_lurwh",
+      "userId": "user-05c4a72035b1",
+      "createdAt": "2026-04-22T13:20:27.569Z"
+    },
+    {
+      "token": "tok_1776864484069_ejfk4k",
+      "userId": "user-05c4a72035b1",
+      "createdAt": "2026-04-22T13:28:04.069Z"
+    },
+    {
+      "token": "tok_1776864685630_i8wmkc",
+      "userId": "user-admin-001",
+      "createdAt": "2026-04-22T13:31:25.630Z"
+    },
+    {
+      "token": "tok_1776864792716_ikszdg9",
+      "userId": "user-admin-001",
+      "createdAt": "2026-04-22T13:33:12.716Z"
+    },
+    {
+      "token": "tok_1776865173795_htegu",
+      "userId": "user-05c4a72035b1",
+      "createdAt": "2026-04-22T13:39:33.795Z"
+    },
+    {
+      "token": "tok_1776865323478_bet8m8",
+      "userId": "user-admin-001",
+      "createdAt": "2026-04-22T13:42:03.478Z"
+    },
+    {
+      "token": "tok_1776865762981_n24adi",
+      "userId": "user-admin-001",
+      "createdAt": "2026-04-22T13:49:22.981Z"
+    },
+    {
+      "token": "tok_1776866724491_4f9lbg",
+      "userId": "user-1776865672320",
+      "createdAt": "2026-04-22T14:05:24.491Z"
+    },
+    {
+      "token": "tok_1776866901823_yxp5m",
+      "userId": "user-1776865672320",
+      "createdAt": "2026-04-22T14:08:21.824Z"
+    }
+  ],
+  "system": [
+    {
+      "id": "config",
+      "auditRetentionDays": 90,
+      "backupHistoryLimit": 12,
+      "fineRate": 2,
+      "facultyBulkRequests": [],
+      "facultyPreferences": {},
+      "facultyProcurementRequests": [],
+      "facultyReserves": [],
+      "inventoryEvents": [],
+      "lastBackupTime": "2026-04-09 03:56:15",
+      "loanPeriodDays": 14,
+      "ledgerEntries": [],
+      "maxBooksPerStudent": 3,
+      "reminderLog": [],
+      "renewalLimit": 2,
+      "lastRestoreTime": "",
+      "studentPaymentRequests": [],
+      "studentPreferences": {},
+      "studentRenewalRequests": [],
+      "studentReservations": [],
+      "backupSchedule": {
+        "daily": true,
+        "weekly": true,
+        "monthly": false
+      },
+      "restorePoints": [],
+      "undoStack": []
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "audit_logs-1776835259798",
+      "user": "jaybalajijanakiraman",
+      "method": "PATCH",
+      "action": "Updated details for A",
+      "status": 200,
+      "ts": "2026-04-22T05:21:00.104Z"
+    },
+    {
+      "id": "audit_logs-1776835299917",
+      "user": "jaybalajijanakiraman",
+      "method": "PATCH",
+      "action": "Updated details for vajrala",
+      "status": 200,
+      "ts": "2026-04-22T05:21:40.224Z"
+    },
+    {
+      "id": "audit_logs-1776835319054",
+      "user": "jaybalajijanakiraman",
+      "method": "PATCH",
+      "action": "Updated details for gaddam",
+      "status": 200,
+      "ts": "2026-04-22T05:21:59.351Z"
+    },
+    {
+      "id": "audit_logs-1776835504666",
+      "user": "jaybalajijanakiraman",
+      "method": "PATCH",
+      "action": "Updated details for Ellanki",
+      "status": 200,
+      "ts": "2026-04-22T05:25:04.963Z"
+    },
+    {
+      "id": "audit_logs-1776837079101",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for N",
+      "status": 200,
+      "ts": "2026-04-22T05:51:19.392Z"
+    },
+    {
+      "id": "audit_logs-1776837121422",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for R",
+      "status": 200,
+      "ts": "2026-04-22T05:52:01.709Z"
+    },
+    {
+      "id": "audit_logs-1776837270127",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for Babu",
+      "status": 200,
+      "ts": "2026-04-22T05:54:30.410Z"
+    },
+    {
+      "id": "audit_logs-1776837285497",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for Shaik",
+      "status": 200,
+      "ts": "2026-04-22T05:54:45.771Z"
+    },
+    {
+      "id": "audit_logs-1776837330869",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for penumuru",
+      "status": 200,
+      "ts": "2026-04-22T05:55:31.117Z"
+    },
+    {
+      "id": "audit_logs-1776837434757",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for Jay",
+      "status": 200,
+      "ts": "2026-04-22T05:57:15.056Z"
+    },
+    {
+      "id": "audit_logs-1776837444382",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for Jaybalaji",
+      "status": 200,
+      "ts": "2026-04-22T05:57:24.692Z"
+    },
+    {
+      "id": "audit_logs-1776837542641",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for Jaybalaji",
+      "status": 200,
+      "ts": "2026-04-22T05:59:02.505Z"
+    },
+    {
+      "id": "audit_logs-1776838354944",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for Jaybalaji",
+      "status": 200,
+      "ts": "2026-04-22T06:12:35.222Z"
+    },
+    {
+      "id": "audit_logs-1776838364346",
+      "user": "jaybalajij2552",
+      "method": "PATCH",
+      "action": "Updated details for Jaybalaji",
+      "status": 200,
+      "ts": "2026-04-22T06:12:44.633Z"
+    },
+    {
+      "id": "audit_logs-1776862821009",
+      "user": "N Devisree",
+      "method": "PATCH",
+      "action": "Triggered local password reset for jaybalajij2552@gmail.com",
+      "status": 200,
+      "ts": "2026-04-22T13:00:21.087Z"
+    },
+    {
+      "id": "audit_logs-1776864071509",
+      "user": "N Devisree",
+      "method": "PATCH",
+      "action": "Triggered local password reset for 244m1a3118@vemu.org",
+      "status": 200,
+      "ts": "2026-04-22T13:21:11.570Z"
+    },
+    {
+      "id": "audit_logs-1776864082123",
+      "user": "N Devisree",
+      "method": "PATCH",
+      "action": "Assigned role Student to J Jay",
+      "status": 200,
+      "ts": "2026-04-22T13:21:22.201Z"
+    },
+    {
+      "id": "audit_logs-1776864088901",
+      "user": "N Devisree",
+      "method": "PATCH",
+      "action": "Assigned role Faculty to J Jay",
+      "status": 200,
+      "ts": "2026-04-22T13:21:28.968Z"
+    },
+    {
+      "id": "audit_logs-1776864100321",
+      "user": "N Devisree",
+      "method": "PATCH",
+      "action": "Updated details for J Jay",
+      "status": 200,
+      "ts": "2026-04-22T13:21:40.376Z"
+    },
+    {
+      "id": "audit_logs-1776864659645",
+      "user": "N Devisree",
+      "method": "PATCH",
+      "action": "Updated details for J Jay",
+      "status": 200,
+      "ts": "2026-04-22T13:30:59.713Z"
+    },
+    {
+      "id": "audit_logs-1776864817214",
+      "user": "J Jay Balaji",
+      "method": "PATCH",
+      "action": "Updated details for vajrala",
+      "status": 200,
+      "ts": "2026-04-22T13:33:37.287Z"
+    },
+    {
+      "id": "audit_logs-1776865296655",
+      "user": "N Devisree",
+      "method": "PATCH",
+      "action": "Updated details for J Jay",
+      "status": 200,
+      "ts": "2026-04-22T13:41:36.692Z"
+    },
+    {
+      "id": "audit_logs-1776865358868",
+      "user": "J Jay Balaji",
+      "method": "PATCH",
+      "action": "Updated details for Ellanki",
+      "status": 200,
+      "ts": "2026-04-22T13:42:38.934Z"
+    }
+  ]
+}

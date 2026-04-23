@@ -1,0 +1,8 @@
+{
+  "name": "Lumina Library System",
+  "description": "A comprehensive library management system for book cataloging, member tracking, and administrative dashboards.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
