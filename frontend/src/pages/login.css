@@ -1,0 +1,323 @@
+/* ============================================
+   TOKENS (login.css)
+   ============================================ */
+.login-theme {
+  --navy:       #0d1b2a;
+  --navy-2:     #162236;
+  --navy-3:     #1e3352;
+  --gold:       #c9a84c;
+  --gold-light: #e2c47a;
+  --gold-dim:   rgba(201,168,76,.18);
+  --gold-glow:  rgba(201,168,76,.35);
+  --cream:      #f5f0e8;
+  --cream-2:    #ede7d9;
+  --muted:      rgba(245,240,232,.55);
+  --error:      #e05252;
+  --success:    #3dbf8a;
+  --info:       #5aacda;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', sans-serif;
+  --font-mono:    'DM Mono', monospace;
+
+  --ease-out:  cubic-bezier(.16,1,.3,1);
+  --ease-snap: cubic-bezier(.34,1.56,.64,1);
+
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background: var(--navy);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ============================================
+   ANIMATED BACKGROUND
+   ============================================ */
+.login-theme .bg {
+  position: fixed; inset: 0; z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.login-theme .bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: drift 18s ease-in-out infinite;
+}
+.login-theme .bg-orb-1 {
+  width: 600px; height: 600px;
+  top: -200px; right: -150px;
+  background: radial-gradient(circle, rgba(201,168,76,.12) 0%, transparent 70%);
+  animation-delay: 0s;
+}
+.login-theme .bg-orb-2 {
+  width: 500px; height: 500px;
+  bottom: -200px; left: -100px;
+  background: radial-gradient(circle, rgba(30,51,82,.8) 0%, transparent 70%);
+  animation-delay: -6s;
+}
+.login-theme .bg-orb-3 {
+  width: 350px; height: 350px;
+  top: 40%; left: 30%;
+  background: radial-gradient(circle, rgba(90,172,218,.07) 0%, transparent 70%);
+  animation-delay: -12s;
+}
+@keyframes drift {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33%      { transform: translate(30px,-40px) scale(1.05); }
+  66%      { transform: translate(-20px,30px) scale(.95); }
+}
+
+/* Book-shelf grid lines */
+.login-theme .bg-lines {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(201,168,76,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ============================================
+   SPLIT LAYOUT
+   ============================================ */
+.login-theme .page-wrap {
+  position: relative; z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+/* LEFT PANEL */
+.login-theme .left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 56px;
+  background: linear-gradient(160deg, var(--navy-2) 0%, var(--navy) 100%);
+  border-right: 1px solid rgba(201,168,76,.12);
+  position: relative;
+  overflow: hidden;
+  animation: panelIn .8s var(--ease-out) both;
+}
+@keyframes panelIn {
+  from { opacity:0; transform: translateX(-30px); }
+  to   { opacity:1; transform: translateX(0); }
+}
+
+.login-theme .left-logo {
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 64px;
+}
+.login-theme .left-logo-icon {
+  width: 48px; height: 48px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 8px 24px var(--gold-glow);
+}
+.login-theme .left-logo-text {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--cream);
+  line-height: 1.3;
+}
+.login-theme .left-logo-text span {
+  display: block; font-size: .72rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.login-theme .left-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.18;
+  color: var(--cream);
+  margin-bottom: 20px;
+}
+.login-theme .left-headline em {
+  font-style: normal;
+  color: var(--gold);
+}
+.login-theme .left-tagline {
+  font-size: .95rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 380px;
+  margin-bottom: 56px;
+}
+
+.login-theme .left-stats {
+  display: flex; gap: 36px;
+  flex-wrap: wrap;
+}
+.login-theme .stat {
+  display: flex; flex-direction: column; gap: 4px;
+}
+.login-theme .stat-num {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+.login-theme .stat-lbl {
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Decorative book stack */
+.login-theme .deco-books {
+  position: absolute;
+  bottom: 0; right: -20px;
+  opacity: .06;
+  font-size: 200px;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* RIGHT PANEL */
+.login-theme .right-panel {
+  width: 480px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 48px;
+  background: rgba(255,255,255,.02);
+  animation: slideUp .7s var(--ease-out) .15s both;
+}
+@keyframes slideUp {
+  from { opacity:0; transform: translateY(24px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+
+/* ============================================
+   CARD
+   ============================================ */
+.login-theme .card {
+  width: 100%;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(201,168,76,.15);
+  border-radius: 24px;
+  padding: 40px 36px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 32px 80px rgba(0,0,0,.4);
+}
+
+.login-theme .card-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 6px;
+}
+.login-theme .card-sub {
+  font-size: .85rem;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+/* ============================================
+   FORM STATES (views)
+   ============================================ */
+.login-theme .view { display: none; }
+.login-theme .view.active {
+  display: block;
+  animation: fadeUp .35s var(--ease-out) both;
+}
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(10px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.login-theme .btn-primary {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  border: none; border-radius: 12px;
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: .95rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  cursor: pointer;
+  transition: all .2s var(--ease-out);
+  box-shadow: 0 6px 24px rgba(201,168,76,.3);
+  position: relative; overflow: hidden;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.login-theme .btn-primary::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: white;
+  opacity: 0;
+  transition: opacity .15s;
+}
+.login-theme .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(201,168,76,.45); }
+.login-theme .btn-primary:hover::after { opacity: .06; }
+.login-theme .btn-primary:active { transform: scale(.98); }
+.login-theme .btn-primary:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+
+/* ============================================
+   DIVIDER & EXTRAS
+   ============================================ */
+.login-theme .divider {
+  border: none;
+  border-top: 1px solid rgba(201,168,76,.1);
+  margin: 24px 0;
+}
+
+.login-theme .helper-text {
+  font-size: .85rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.login-theme .helper-text strong { color: var(--gold-light); }
+
+/* Back to site */
+.login-theme .back-site {
+  text-align: center;
+  margin-top: 22px;
+  font-size: .8rem;
+  color: var(--muted);
+}
+.login-theme .back-site a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .15s;
+}
+.login-theme .back-site a:hover { color: var(--gold); }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 960px) {
+  .login-theme .left-panel { display: none; }
+  .login-theme .right-panel { width: 100%; padding: 32px 24px; }
+}
+@media (max-width: 480px) {
+  .login-theme .card { padding: 28px 22px; }
+}
