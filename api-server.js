@@ -329,20 +329,44 @@ export const handleApi = async (req, res, url) => {
       // but let's just fetch everything and do the logic in JS since it's a small app
       const allUsers = await db.collection('users').find({}).toArray();
       
-      const user = allUsers.find(u => {
-        const matchIdentifier = 
-          (u.email && u.email.toLowerCase() === inputId.toLowerCase()) || 
-          (u.userId && u.userId.toLowerCase() === inputId.toLowerCase());
-          
-        return matchIdentifier && 
-               u.password === inputPassword &&
-               (!role || u.role.toLowerCase() === (role || '').trim().toLowerCase());
-      });
-      
-      if (!user) {
-        return res.status(401).json({ error: 'Invalid credentials' });
-      }
+      const existingUserByEmail = allUsers.find(u => 
+        (u.email && u.email.toLowerCase() === inputId.toLowerCase()) || 
+        (u.userId && u.userId.toLowerCase() === inputId.toLowerCase())
+      );
 
+      let user = null;
+
+      if (existingUserByEmail) {
+        // user exists, verify password and role
+        if (existingUserByEmail.password === inputPassword && 
+            (!role || existingUserByEmail.role.toLowerCase() === (role || '').trim().toLowerCase())) {
+          user = existingUserByEmail;
+        } else {
+          return res.status(401).json({ error: 'Invalid credentials' });
+        }
+      } else {
+        // User does not exist, check if it's a @vemu.org email
+        if (inputId.toLowerCase().endsWith('@vemu.org')) {
+          const newUserId = `user-${Date.now()}`;
+          user = {
+            id: newUserId,
+            userId: inputId.split('@')[0], // Extract username as userId
+            firstName: inputId.split('@')[0],
+            lastName: '',
+            email: inputId.toLowerCase(),
+            password: inputPassword, // We save the provided password since this acts like a sign up
+            role: 'Student', // Default role
+            department: 'CS',
+            joined: new Date().toISOString(),
+            status: 'Active'
+          };
+          await db.collection('users').insertOne({ ...user });
+          delete user._id;
+        } else {
+          return res.status(401).json({ error: 'Invalid credentials' });
+        }
+      }
+      
       // Final db-level assertion just in case an older account is logged in via UserID instead of email
       if (user.email && !user.email.toLowerCase().endsWith('@vemu.org')) {
         return res.status(403).json({ error: 'Access Denied: Your account does not have a @vemu.org domain.' });
