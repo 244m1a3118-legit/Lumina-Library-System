@@ -4,16 +4,38 @@ import fs from 'fs/promises';
 import path from 'path';
 
 dotenv.config();
+if (!process.env.MONGODB_URI) {
+  dotenv.config({ path: '.env.example' });
+}
 
 let client;
 let mongoDbInstance;
 
 async function getDb() {
   if (mongoDbInstance) return mongoDbInstance;
-  const uri = process.env.MONGODB_URI;
+  let uri = process.env.MONGODB_URI;
   if (!uri) {
     throw new Error('MONGODB_URI not found. Please provide the connection string in the Secrets menu.');
   }
+  
+  // Fix unencoded password characters like '@'
+  if (uri.startsWith('mongodb')) {
+    const protocolEnd = uri.indexOf('://') + 3;
+    const lastAt = uri.lastIndexOf('@');
+    if (protocolEnd > 2 && lastAt > protocolEnd) {
+      const authPart = uri.substring(protocolEnd, lastAt);
+      const firstColon = authPart.indexOf(':');
+      if (firstColon !== -1) {
+        const user = authPart.substring(0, firstColon);
+        let pass = authPart.substring(firstColon + 1);
+        if (pass.includes('@') && !pass.includes('%40')) {
+          pass = encodeURIComponent(pass);
+          uri = uri.substring(0, protocolEnd) + user + ':' + pass + uri.substring(lastAt);
+        }
+      }
+    }
+  }
+
   client = new MongoClient(uri);
   await client.connect();
   mongoDbInstance = client.db('lms_database');
